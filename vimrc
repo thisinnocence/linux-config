@@ -31,4 +31,3 @@ set autoread
 set nobackup
 set noswapfile
 
-:imap ii <Esc>        " 按键映射  <ESC> -> ii
