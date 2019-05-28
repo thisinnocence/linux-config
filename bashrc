@@ -3,11 +3,14 @@ alias ll='ls -ls'
 alias l='ls -als'
 
 alias ..='cd ..'
+alias cd..='cd ..'
 alias ...='cd ../..'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+
+alias md='mkdir'
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
