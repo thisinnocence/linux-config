@@ -13,6 +13,7 @@ set mouse=a                        " 开启鼠标支持
 set nocompatible                   " 不兼容vi
 set nowrap                         " 不自动折行
 set lbr                            " 不在单词中折行
+set autoread                       " 文件被修改时自动载入
 
 set tabstop=4       " Tab键的宽度
 set shiftwidth=4    " 设定 << 和 >> 命令移动时的宽度为 4
