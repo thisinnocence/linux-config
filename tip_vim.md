@@ -15,6 +15,7 @@ J                # join 合并两行
 :read !ls        # 读取命令的输出
 :! <cmd>         # 执行命令cmd
 :shell           # 新开一个shell
+ctrl + [         # == ESC (ctrl + c)
 
 # 录制命令，类似gdb的command定制脚本
 q{a~z}           # 进入录制，录制到a寄存器
@@ -41,6 +42,16 @@ ctrl+w <hjkl>    # 跳转分屏
 ctrl+w <+>       # 扩大当前分屏
 ctrl+w <->       # 减小当前分屏
 :only            # 取消分屏
+
+# 多标签
+:tabe           # tab edit 新标签打开
+gt              # go tab 在tab中切换
+:tabc           # tab close 关闭标签页
+
+# 多buffer
+:e file         # 新buffer中打开file
+:ls             # 列出当前缓冲区
+:b n            # 去第n个缓冲区
 
 # 折叠
 zR               # 打开所有折叠
