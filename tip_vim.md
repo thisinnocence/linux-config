@@ -82,10 +82,10 @@ D                # 删除内容到行尾,删除内容都放入了可供粘贴的
 #                 # 选中并反向查找光标所在的词
 :set ignorecase   # 搜索忽略大小写，可以tab联想输入
 :set noignorecase # 不忽略
-/<上下箭头>       # 可以联想出历史输入过的词
+/<up/down arrow>  # 可以联想出历史输入过的词
 :set hlsearch     # 打开设置高亮
 :jumps            # 列出历史跳转列表
-fx                # 找到字幕x，再按分号跳到下一处
+fx                # 找到本行字母x，再按分号跳到下一处
 
 # 替换
 :s/old/new/g      # 用new替换行内old
