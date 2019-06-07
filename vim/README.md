@@ -1,3 +1,7 @@
+# Vim 使用小技巧
+
+## 常用命令
+
 ```bash
 # common
 u                # 撤销
@@ -145,4 +149,8 @@ ygg       # 复制光标所在行到开头所有行, 类似: c修改 d删除
 p         # 粘贴到下一处
 P         # 粘贴到上一处
 ```
+
+# 参考 
+
+- [Vim从入门到精通](https://github.com/wsdjeg/vim-galore-zh_cn)
 
