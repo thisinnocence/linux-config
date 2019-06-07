@@ -13,6 +13,7 @@ set history=1000
 set hlsearch
 set incsearch
 
+set ai              " auto indenting
 set showmatch       " 高亮显示匹配的括号
 set matchtime=2     " 匹配括号高亮的时间(单位0.1s)
 set scrolloff=10    " 光标到屏幕底端保留10行

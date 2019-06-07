@@ -16,6 +16,7 @@ J                # join 合并两行
 :! <cmd>         # 执行命令cmd
 :shell           # 新开一个shell
 ctrl + [         # == ESC (ctrl + c)
+:qa              # 退出所有窗口
 
 # 录制命令，类似gdb的command定制脚本
 q{a~z}           # 进入录制，录制到a寄存器
