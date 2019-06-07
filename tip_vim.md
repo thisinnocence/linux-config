@@ -45,14 +45,14 @@ ctrl+w <->       # 减小当前分屏
 :only            # 取消分屏
 
 # 多标签
-:tabe           # tab edit 新标签打开
-gt              # go tab 在tab中切换
-:tabc           # tab close 关闭标签页
+:tabe            # tab edit 新标签打开
+gt               # go tab 在tab中切换
+:tabc            # tab close 关闭标签页
 
 # 多buffer
-:e file         # 新buffer中打开file
-:ls             # 列出当前缓冲区
-:b n            # 去第n个缓冲区
+:e file          # 新buffer中打开file
+:ls              # 列出当前缓冲区
+:b n             # 去第n个缓冲区
 
 # 折叠
 zR               # 打开所有折叠
@@ -93,11 +93,11 @@ fx                # 找到本行字母x，再按分号跳到下一处
 :%s/old/new/g     # 全文替换
 
 # 区间内
-vi"   # 选中光标所在“引号内的内容，in "
-vi'   # in '
-vi[   # in [
-vi(   # in (
-vi{   # in {
+vi"  # 选中光标所在“引号内的内容，in "
+vi'  # in '
+vi[  # in [
+vi(  # in (
+vi{  # in {
 # 类比还有: ci( di(, 修改删除括号内的
 
 # 字符
