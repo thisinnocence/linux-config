@@ -1,5 +1,9 @@
 # Vim 使用小技巧
 
+## Vim cheetsheet
+
+![vim-cheetsheet](vim-cheat-sheet.gif)
+
 ## 常用命令
 
 ```bash
