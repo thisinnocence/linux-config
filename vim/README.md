@@ -8,6 +8,9 @@
 
 ```bash
 # common
+H                # 移动到屏幕顶端high
+M                # 移动到屏幕中部middle
+L                # 移动到屏幕中部low
 u                # 撤销
 ctrl + r         # 反撤销
 u<n>             # 撤销n次
