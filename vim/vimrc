@@ -1,3 +1,5 @@
+inoremap jk <esc> # nore: no recursive mapping
+
 syntax on
 set number
 set ruler
