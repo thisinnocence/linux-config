@@ -8,28 +8,32 @@
 
 ```bash
 # common
-H                # 移动到屏幕顶端high
-M                # 移动到屏幕中部middle
-L                # 移动到屏幕中部low
 u                # 撤销undo
 ctrl + r         # 反撤销redo
 u<n>             # 撤销n次
 U                # 撤销当前行所有修改
 .                # 重复上一次操作, 非常有用！
 ctrl + p         # 插入模式下联想已经输入过的单词
-ctrl + o         # 跳转光标的上一次位置
 ctrl + v         # 进入矩阵块选中模式
 daw              # 光标在单词中也可以删除一个单词, a word
 vimdiff f1 f1    # 对比两个文件的差异
 dp               # diff put, 差异部分同步到对端窗口
 J                # join 合并两行
 :read !ls        # 读取命令的输出
+:read !date      # 读取日期
 :! <cmd>         # 执行命令cmd
 :shell           # 新开一个shell
 ctrl + [         # == ESC (ctrl + c)
 :qa              # 退出所有窗口
 :set list        # 显示空白符,关闭 set nolist
 :help <cmd>      # 查cmd命令的帮助
+
+# 光标移动
+H                # 移动到屏幕顶端high
+M                # 移动到屏幕中部middle
+L                # 移动到屏幕中部low
+ctrl + o         # 跳转光标的上一次位置
+ctrl + i         # 跳转光标的下一次位置
 
 # 录制命令，类似gdb的command定制脚本
 q{a~z}           # 进入录制，录制到a寄存器
@@ -84,9 +88,12 @@ cw               # 修改单词
 C                # 修改光标导航到行尾巴 == d$, i == D, i
 D                # 删除内容到行尾,删除内容都放入了可供粘贴的缓冲区
 ~                # 反转光标或选中的字母的大小写
+
+# 缩进
 >>               # 整行向右缩进
 <<               # 整行向做缩进
 ==               # 自动缩进
+=%               # 光标在括号处，缩进整个语句块 
 
 # 查找
 /xx               # 查找xx, n向下，N反向
