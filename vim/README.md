@@ -15,8 +15,6 @@ U                   # 撤销当前行所有修改
 .                   # 重复上一次操作, 非常有用！
 ctrl + v            # 进入矩阵块选中模式
 daw                 # 光标在单词中也可以删除一个单词, a word
-vimdiff f1 f1       # 对比两个文件的差异
-dp                  # diff put, 差异部分同步到对端窗口
 J                   # join 合并两行
 :read !ls           # 读取命令的输出
 :read !date         # 读取日期
@@ -26,6 +24,7 @@ ctrl + [            # == ESC (ctrl + c)
 :qa                 # 退出所有窗口
 :set list           # 显示空白符,关闭 set nolist
 :help <cmd>         # 查cmd命令的帮助
+K                   # 查看光标所在单词的帮助
 
 # 光标移动
 H                # 移动到屏幕顶端high
@@ -33,6 +32,10 @@ M                # 移动到屏幕中部middle
 L                # 移动到屏幕中部low
 ctrl + o         # 跳转光标的上一次位置
 ctrl + i         # 跳转光标的下一次位置
+
+# vimdff
+vimdiff f1 f1       # 对比两个文件的差异
+dp                  # diff put, 差异部分同步到对端窗口
 
 # 自动补全
 ctrl + p            # 插入模式下联想已经输入过的单词
