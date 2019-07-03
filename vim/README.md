@@ -25,6 +25,7 @@ ctrl + [            # == ESC (ctrl + c)
 :set list           # 显示空白符,关闭 set nolist
 :help <cmd>         # 查cmd命令的帮助
 K                   # 查看光标所在单词的帮助
+:%!xxd              # 以16进制查看文件内容
 
 # 光标移动
 H                # 移动到屏幕顶端high
