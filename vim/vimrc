@@ -10,7 +10,6 @@ set noswapfile
 set history=1000
 set hlsearch
 set incsearch
-set ai smartindent
 set showmatch
 set scrolloff=10
 set nowrap
@@ -21,6 +20,11 @@ set softtabstop=4
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
 set laststatus=2
+
+set ignorecase
+set smartcase
+set autoindent
+set smartindent
 
 syntax on
 filetype on
