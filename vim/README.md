@@ -40,7 +40,7 @@ dp                  # diff put, 差异部分同步到对端窗口
 
 # 自动补全
 ctrl + p            # 插入模式下联想已经输入过的单词
-ctrl + X, ctrl + L # 插入模式下自动补全行
+ctrl + X, ctrl + L  # 插入模式下自动补全行, 可以配置组合键盘映射key-map
 
 # 录制命令，类似gdb的command定制脚本
 q{a~z}           # 进入录制，录制到a寄存器
