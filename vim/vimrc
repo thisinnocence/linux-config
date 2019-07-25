@@ -25,6 +25,7 @@ set ignorecase
 set smartcase
 set autoindent
 set smartindent
+set backspace=2
 
 syntax on
 filetype on
