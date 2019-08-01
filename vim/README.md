@@ -183,3 +183,4 @@ P         # 粘贴到上一处
 - [use_vim_as_ide - c/c++](https://github.com/yangyangwithgnu/use_vim_as_ide)
 - <https://spacevim.org/documentation/>
 - <https://github.com/amix/vimrc>
+- <https://github.com/skywind3000/awesome-cheatsheets/blob/master/editors/vim.txt>
