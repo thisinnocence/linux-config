@@ -1,4 +1,6 @@
 set nocompatible
+set backspace=indent,eol,start
+
 set number
 set ruler
 set showmode
@@ -34,5 +36,4 @@ autocmd FileType make set noexpandtab
 autocmd InsertLeave,WinEnter * set cursorline
 autocmd InsertEnter,WinLeave * set nocursorline
 
-inoremap jk <esc>
 colorscheme desert
