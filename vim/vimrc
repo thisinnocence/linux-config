@@ -3,6 +3,8 @@ set backspace=2  "help bs: 2 same as ":set backspace=indent,eol,start"
 
 set autoindent
 set smartindent
+"set paste "help paste
+"set nopaste
 
 set tabstop=4
 set expandtab

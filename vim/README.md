@@ -23,6 +23,7 @@ J                   # join 合并两行
 ctrl + [            # == ESC (ctrl + c)
 :qa                 # 退出所有窗口
 :set list           # 显示空白符,关闭 set nolist
+:set paste          # 打开粘贴模式，关闭 set nopaste
 :help <cmd>         # 查cmd命令的帮助
 K                   # 查看光标所在单词的帮助
 :%!xxd              # 以16进制查看文件内容
