@@ -25,13 +25,13 @@ K                   # 查看光标所在单词的帮助
 :read !date         # 读取日期
 :!<cmd>             # 执行命令cmd
 :shell              # 新开一个shell
-:qa                 # 退出所有窗口
+:qa                 # 退出所有buffer
 :set list           # 显示空白符,关闭 set nolist
 :set paste          # 打开粘贴模式，关闭 set nopaste
 :help <cmd>         # 查cmd命令的帮助
 :sort r /regex/     # 对行进行正则排序
 
-# 命令模式代码相关
+# 命令模式代码相关跳转
 gd              # 跳转到局部变量定义 go definition
 gf              # 跳转到文件
 %               # 跳转到匹配的括号
@@ -48,6 +48,7 @@ ctrl + t         # 右缩进
 H                # 移动到屏幕顶端high
 M                # 移动到屏幕中部middle
 L                # 移动到屏幕中部low
+zz               # 当前行移动到屏幕中间
 ctrl + o         # 跳转光标的上一次位置
 ctrl + i         # 跳转光标的下一次位置
 ``               # 也是两个地方来回跳转
@@ -95,6 +96,7 @@ gt               # go tab 在tab中切换
 :e file          # 新buffer中打开file进行edit
 :ls              # 列出当前缓冲区
 :b n             # 去第n个缓冲区
+:bd n            # buffer delete
 
 # 折叠
 zf               # 创建折行, f表示fold
