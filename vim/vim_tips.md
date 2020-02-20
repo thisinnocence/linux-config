@@ -16,17 +16,33 @@ U                   # 撤销当前行所有修改
 ctrl + v            # 进入矩阵块选中模式
 daw                 # 光标在单词中也可以删除一个单词, a word
 J                   # join 合并两行
+K                   # 查看光标所在单词的帮助
+
+# 底部命令行模式
+:%!xxd              # 以16进制查看文件内容
 :read !ls           # 读取命令的输出
+:r !pwd             # 输入当期路径, r 表示 read
 :read !date         # 读取日期
-:! <cmd>            # 执行命令cmd
+:!<cmd>             # 执行命令cmd
 :shell              # 新开一个shell
-ctrl + [            # == ESC (ctrl + c)
 :qa                 # 退出所有窗口
 :set list           # 显示空白符,关闭 set nolist
 :set paste          # 打开粘贴模式，关闭 set nopaste
 :help <cmd>         # 查cmd命令的帮助
-K                   # 查看光标所在单词的帮助
-:%!xxd              # 以16进制查看文件内容
+:sort r /regex/     # 对行进行正则排序
+
+# 命令模式代码相关
+gd              # 跳转到局部变量定义 go definition
+gf              # 跳转到文件
+%               # 跳转到匹配的括号
+
+# insert模式下
+ctrl + w         # 删除word
+ctrl + u         # 重新编辑本行
+ctrl + [         # 实现ESC功能
+ctrl + d         # 左缩进
+ctrl + t         # 右缩进
+
 
 # 光标移动
 H                # 移动到屏幕顶端high
@@ -34,6 +50,7 @@ M                # 移动到屏幕中部middle
 L                # 移动到屏幕中部low
 ctrl + o         # 跳转光标的上一次位置
 ctrl + i         # 跳转光标的下一次位置
+``               # 也是两个地方来回跳转
 
 # vimdff
 vimdiff f1 f1       # 对比两个文件的差异
@@ -80,10 +97,16 @@ gt               # go tab 在tab中切换
 :b n             # 去第n个缓冲区
 
 # 折叠
+zf               # 创建折行, f表示fold
+zo               # 打开折行, o表示open
+zc               # 关闭折行, c表示close
+zd               # 删除折行, d表示delete
 zR               # 打开所有折叠
-zc               # 折叠当前行current
-zo               # 打开当前折叠open
-zfap             # zf一个操作符, ap一个文本块，创建折叠
+#zf可以和text-object配合工作
+zfa{             #折叠承兑大括号之间的内容，包括大括号所在行
+zfi{             #折叠承兑大括号之间的内容，不包括大括号所在行
+zfap             #zf一个操作符, ap一个文本块，创建折叠
+:h folding       #折行的帮助
 
 # 编辑
 :x               # 如果文件有更改，则保存后退出, 否则直接退出
