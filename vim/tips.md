@@ -1,6 +1,6 @@
 # VIM tips
 
-```
+```bash
 # 命令模式
 u                   # 撤销undo
 ctrl + r            # 反撤销redo
