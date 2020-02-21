@@ -1,20 +1,12 @@
-# Vim 使用小技巧
+# VIM tips
 
-## Vim cheetsheet
-
-![vim-cheetsheet](vim-cheat-sheet.gif)
-
-## 常用命令
-
-```bash
-# common
+```
+# 命令模式
 u                   # 撤销undo
 ctrl + r            # 反撤销redo
 u<n>                # 撤销n次
 U                   # 撤销当前行所有修改
 .                   # 重复上一次操作, 非常有用！
-ctrl + v            # 进入矩阵块选中模式
-daw                 # 光标在单词中也可以删除一个单词, a word
 J                   # join 合并两行
 K                   # 查看光标所在单词的帮助
 
@@ -42,7 +34,6 @@ ctrl + u         # 重新编辑本行
 ctrl + [         # 实现ESC功能
 ctrl + d         # 左缩进
 ctrl + t         # 右缩进
-
 
 # 光标移动
 H                # 移动到屏幕顶端high
@@ -87,16 +78,14 @@ ctrl+w <+>       # 扩大当前分屏
 ctrl+w <->       # 减小当前分屏
 :only            # 取消分屏
 
-# 多标签
-:tabe            # tab edit 新标签打开
-gt               # go tab 在tab中切换
-:tabc            # tab close 关闭标签页
-
-# 多buffer
+# 多buffer多标签
 :e file          # 新buffer中打开file进行edit
 :ls              # 列出当前缓冲区
 :b n             # 去第n个缓冲区
 :bd n            # buffer delete
+:tabe            # tab edit 新标签打开
+gt               # go tab 在tab中切换
+:tabc            # tab close 关闭标签页
 
 # 折叠
 zf               # 创建折行, f表示fold
@@ -104,11 +93,10 @@ zo               # 打开折行, o表示open
 zc               # 关闭折行, c表示close
 zd               # 删除折行, d表示delete
 zR               # 打开所有折叠
-#zf可以和text-object配合工作
-zfa{             #折叠承兑大括号之间的内容，包括大括号所在行
-zfi{             #折叠承兑大括号之间的内容，不包括大括号所在行
-zfap             #zf一个操作符, ap一个文本块，创建折叠
-:h folding       #折行的帮助
+zfa{             # zf可以和text-object配合,折叠承兑大括号之间的内容，包括大括号所在行
+zfi{             # 折叠承兑大括号之间的内容，不包括大括号所在行
+zfap             # zf一个操作符, ap一个文本块，创建折叠
+:h folding       # 折行的帮助
 
 # 编辑
 :x               # 如果文件有更改，则保存后退出, 否则直接退出
@@ -149,30 +137,27 @@ fx                # 找到本行字母x，再按分号跳到下一处
 :%s/old/new/g     # 全文替换
 
 # 区间内
-vi"  # 选中光标所在“引号内的内容，in "
-vi'  # in '
-vi[  # in [
-vi(  # in (
-vi{  # in {
-# 类比还有: ci( di(, 修改删除括号内的
+vi"  # 选中光标所在引号内的内容
+vi'  # 单引号内, 类似还有各种括号内等, 类比还有: ci(/di(, 表示change/delete
 
+# 
 # 字符
 $  # 行尾
 ^  # 行首非空白字符
 0  # 行首
 
 # 词操作
-w  # 后一词词首
-W  # 后一词词首，忽略标点
-e  # 后一词词尾
-E  # 后一词词尾，忽略标点
-b  # 前一词词首
-B  # 前一次词首，忽略标点
+w     # 后一词词首
+W     # 后一词词首，忽略标点
+e     # 后一词词尾
+E     # 后一词词尾，忽略标点
+b     # 前一词词首
+B     # 前一次词首，忽略标点
+daw   # 删除一个单词, a word
 
 # 句操作
 )  # 后一句句首
 (  # 前一句句首
-%  # 配合括号寻找另一半
 
 # 行操作
 G  # 最后一行非空白字符
