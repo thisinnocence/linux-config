@@ -44,3 +44,5 @@ autocmd InsertEnter,WinLeave * set nocursorline
 
 colorscheme desert
 
+set tags=./.tags;,.tags
+
