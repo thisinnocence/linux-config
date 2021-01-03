@@ -46,3 +46,5 @@ colorscheme desert
 
 set tags=./.tags;,.tags
 
+autocmd BufWritePost $MYVIMRC source $MYVIMRC
+
